@@ -1,0 +1,613 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.clear:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+body{
+    width: inherit;
+}
+
+a{
+    text-decoration: none;
+
+}
+.container{
+    margin: 0 3% 0 7%;
+    padding: 5px;
+    width: 85%;
+    text-align: justify;
+}
+/* start top bar */
+.top-bar{
+    padding: 2px 0px 2px 0px;
+    width: inherit;
+    height: 40px;
+    background: #000000de;
+
+}
+.row{
+    display: flex;
+    flex-warp: warp;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 4px;
+}
+.column{
+    flex: 0 0 50%;
+    max-width: 50%;
+
+}
+.contact{
+
+}
+/* top bar text color */
+span,i{
+    color: skyblue;
+
+}
+.social ul{
+    link-style: none;
+    float: right;
+}
+.social ul li{
+    display: inline-block;
+    margin: 0 12px 0 12px;
+}
+
+/* End top bar */
+/***********************************/
+/* start nav bar */
+.nav-bar{
+    height: 70px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: -2px;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    z-index: 1;
+    background: white;
+}
+.nav-bar.container.row{
+    align-items: center!important;
+}
+.colm{
+
+
+}
+.nav-bar .logo{
+   font-size: 27px;
+   font-family: cursive;
+}
+.nav-bar .nav-menu{
+    width: 85%;
+}
+.nav-menu ul{
+    link-style: none;
+    float: right;
+
+}
+.nav-menu ul li{
+    display: inline-block;
+    margin: 0 12px 0 12px;
+}
+.nav-menu ul li a{
+    font-size: 23px;
+    font-family: monospace;
+}
+
+.nav-menu ul li a,.logo{
+    color: black!important;
+    display: block;
+    padding: 12px;
+
+}
+.nav-menu ul li a:hover,.nav-menu ul li a:active{
+    color: skyblue!important;
+}
+.nav-menu ul li::after{
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: lightblue;
+    margin: auto;
+    display: block;
+    transition: 0.3s;
+}
+.nav-menu ul li:hover::after {
+    width: 100%;
+}
+/* end nav bar */
+/******************************************************/
+/* start side */
+
+.site-blocks-cover.container{
+
+}
+.text-align{
+    margin: 10% 0 0 0;
+    text-align: center;
+}
+
+.text-align .button{
+    width: 133px;
+    text-align: center;
+    margin: 5% 0 44px 46%;
+
+}
+.text-align .button a{
+    background: #3db5b8;
+    padding: 12px;
+    display: block;
+    color: white;
+    font-size: 19px;
+    border-radius: 10px;
+}
+.text-align .button a:hover{
+    background: #3c9e7c;
+
+}
+/* end side */
+/*************************************/
+/* start side work */
+.side-work{
+    position: relative;
+    height: auto;
+}
+.side-box-number{
+    padding: 25px;
+    width: 80%;
+
+}
+.side-box-number .box-number{
+    opacity: 0.08;
+    font-size: 120px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -3%;
+    margin-left: -3%;
+}
+.side-box-number h2{
+    font-size: 44px;
+    color: #32dbc6;
+}
+.side-box-number p{
+    line-height: 28px;
+    color: #494949;
+    font-size: 19px;
+}
+.side-box-number ul{
+    list-style: none;
+
+}
+.side-box-number ul li{
+    padding-left: 3%;
+    display:block;
+    margin-top: 12px;
+}
+.side-box-number ul li:before{
+    margin-left: -1%;
+    content: url('../image/arow.png');
+    position: absolute
+}
+.side-box-number ul li a{
+    color: #515050;
+    padding-left: 12px;
+
+}
+/* end side work */
+/*****************************************/
+/*** Start our works ********/
+.our-work{
+
+}
+.our-work .text-align{
+    padding: 20px;
+    height: 200px;
+    position: relative;
+    margin: 0;
+
+}
+.work-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    transform: translate(-50%,-50%);
+
+}
+.work-text h2{
+    font-size: 53px;
+}
+.work-slider{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 500px;
+}
+.work-slide{
+    height: 400px;
+    padding: 7px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.work-slide img{
+    width: 100%;
+    height: inherit;
+    display: inline-block;
+}
+/*** End our works ********/
+/**************************************************/
+/***** Start Feature section *********/
+.feature{
+    margin: 3% 0 5% 0;
+}
+.ft-container{
+    background: black;
+    padding: 10px;
+
+
+}
+.feature-1,.feature-2{
+    width: 50%;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+.feature-1 img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+.colm-box{
+    float: left;
+    padding: 7px;
+    width: 46%;
+}
+.colm-box h2{
+    padding: 15px;
+}
+.colm-box h2 i{
+    margin: 3px;
+    font-size: 22px;
+}
+.colm-box p{
+    width: 90%;
+    color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.colm-box a{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+
+}
+.ft-box1{
+
+
+}
+/***** end Feature section *********/
+/**************************************************/
+/********** Start Service section *********/
+.our-service{
+    border-bottom: 1px solid gray;
+}
+
+.service{
+    float: left;
+    margin: 12px;
+    padding: 34px;
+
+}
+.service-container{
+    w
+}
+.service-icon i{
+    font-size: 54px;
+
+}
+.service-content i{
+    font-size: 65px;
+}
+.service-content h2{
+    padding-bottom: 12px;
+    margin: -38px 0 0 70px;
+}
+.service-content p{
+    margin:12px 0 12px 0;
+}
+.service-icon i{
+    color: lightblue;
+}
+.our-service::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/********** End Service section *********/
+/**************************************************/
+/*********** Start about-us section **********/
+.about-us{
+    margin:20px 0 20px 0;
+}
+.about-col{
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    width: 45%;
+}
+.about-box1 h2{
+    font-size: 45px;
+    margin: 22px 0 20px 0;
+}
+.about-box1 p{
+    color: gray;
+    margin: 22px 0 20px 0;
+
+}
+.about-colm{
+    float: left;
+    padding: 10px;
+    width: 43%;
+}
+.about-icon i{
+    font-size: 50px;
+}
+.about-content{
+    width:98%;
+    padding: px;
+
+}
+.about-content h3{
+    margin: 10px 0 10px 0;
+}
+.about-content p{
+    margin:14px 0 13px 0;
+}
+.about-box2 img{
+    width:98%;
+    height: 98%;
+    margin: 1px;
+}
+/*********** end about-us section **********/
+/**************************************************/
+
+/******************** Start our-team **************************/
+.our-team{
+    margin: 13px 0 10px 0;
+    padding-bottom: 20px;
+    border-bottom: 0.1px solid gray;
+
+}
+.text-align-h{
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+}
+.team-met{
+    margin: 10px;
+    padding: 13px;
+    width: 29%;
+    height: auto;
+    float: left;
+    text-align: center;
+    background: #f1e6e6;
+}
+.team-met h4{
+    opacity: 0.3;
+}
+.team-met img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.team-met p{
+   margin: 14px 0 14px 0;
+}
+.team-social ul{
+    list-style: none;
+}
+.team-social ul li{
+    display: inline-block;
+    width: 51px;
+}
+.team-social ul li a{
+    display: block;
+    color: #23a6dc;
+    font-size: 23px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #eccece;
+}
+/******************** End our-team **************************/
+/**************************************************/
+/*****************  Start blog **********************/
+.blog{
+    padding: 20px 0 20px 0;
+}
+.blog-box{
+    margin: 10px;
+    padding: 13px;
+
+    width: 29%;
+    height: auto;
+    float: left;
+}
+.blog-box img{
+    width: 96%;
+    height: 20%;
+}
+.blog-box h2{
+    padding: 10px 0 10px 0;
+}
+.blog-box p{
+    margin: 10px 0 10px 0;
+}
+
+/*****************  End blog **********************/
+/**************************************************/
+/******************** start contact us ********************/
+.contact-box{
+    float: left;
+    width: 46%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+.contact-input{
+    padding: 10px;
+    text-align: left;
+
+}
+.name{
+    width:45%;
+    float:left;
+    margin:12px;
+
+}
+.name::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.name input{
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    border-radius: 20px;
+    height: 20px;
+    width: 94%;
+    margin: 4px -9px;
+    padding: 25px;
+}
+
+.contact-input input:not(.name input){
+    width: 94%;
+    box-sizing: border-box;
+    height: 20px;
+    margin: 10px 0;
+    padding: 25px;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 20px;
+
+}
+.contact-input label:not(.name label){
+    margin-left: 10px;
+}
+.contact-input #message{
+    width: 80%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: justify;
+    margin: 10px 0;
+    padding: 25px;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 20px;
+
+}
+#submit{
+    width: 200px;
+    padding: 22px 0 46px 0px;
+    font-size: 28px;
+}
+.ct-box2{
+    padding: 10px;
+
+}
+.ct-box2 h2, .ct-box2 p{
+    margin: 20px;
+    padding: 7px;
+}
+
+/******************** end contact us ********************/
+/**************************************************/
+
+/* start footer section */
+.footer{
+    background:  #0f0d0d;
+    color: white;
+    position: relative;
+    height: auto;
+    padding: 30px;
+}
+.f-box{
+    float: left;
+
+}
+.column-box{
+    padding: 12px;
+
+}
+.column-box h2{
+    font-size: 23px;
+    color: skyblue;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+.column-box p{
+    line-height: 22px;
+    color: gray;
+}
+.column-box ul{
+    float: left;
+    list-style:none;
+}
+.column-box >ul >li >a{
+    color: gray;
+    }
+.send-mail{
+    width: 80%;
+    border-radius: 15px;
+    outline: none;
+    position: relative;
+
+}
+
+.send-mail .email {
+    border-radius: 15px 0 0 15px;
+    border: 1px solid skyblue;
+    padding: 10px;
+    outline: none;
+    width: 69%;
+    font-size: 16.5px;
+    margin: -1% 12% -1% -2%;
+    position: absolute;
+}
+.send-mail .send{
+    border-radius: 0 15px 15px 0;
+    padding: 10px;
+    outline: none;
+    margin: -1% 12% -1% 74%;
+    width: 30%;
+    background: #30bfa2;
+    color: white;
+    font-size: 16.5px;
+    position: absolute;
+    border: 1px solid #30bfa2;
+}
+.send-mail .send:hover,.send-mail .send:active{
+    background: #41d8ba;
+}
+.f-row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.footer .copyright{
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+    color: gray;
+}
+
+/* end footer section */
